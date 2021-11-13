@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         btnToast.setOnClickListener {
 //      토스트 버큰이 눌릴때 실행됨
             Toast.makeText(this,"토스트 띄우기!!! 성공!! 힘내!!!",Toast.LENGTH_SHORT).show()
-
+            Toast.makeText(this, "2번재 띄우기", Toast.LENGTH_SHORT).show()
         }
 
         btnLog.setOnClickListener {
