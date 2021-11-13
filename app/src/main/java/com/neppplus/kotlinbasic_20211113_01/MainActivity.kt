@@ -3,12 +3,19 @@ package com.neppplus.kotlinbasic_20211113_01
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        btnToast.setOnClickListener {
+//      토스트 버큰이 눌릴때 실행됨
+            Toast.makeText(this,"토스트 띄우기!!! 성공!! 힘내!!!",Toast.LENGTH_SHORT).show()
+
+        }
 
         btnLog.setOnClickListener {
 
